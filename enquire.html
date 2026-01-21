@@ -366,6 +366,29 @@ nav ul li a:hover {
 .checkbox-group input {
     margin-top: 3px;
 }
+.phone-group {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-group select {
+    width: 30%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.phone-group input {
+    width: 70%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+}
 
 
 </style>
@@ -397,7 +420,7 @@ nav ul li a:hover {
     <h2>Enquiry Form</h2>
 
     <form 
-        action="" 
+        action="https://rhonda-unceilinged-nonstrategically.ngrok-free.dev/webhook/demo.v0.1" 
         method="POST" 
         class="enquiry-form"
     >
@@ -439,16 +462,26 @@ nav ul li a:hover {
         </div>
 
         <!-- Phone -->
-        <div class="form-group">
-            <label for="phone">Mobile Number</label>
-            <input 
-                type="tel" 
-                id="phone" 
-                name="phone" 
-                placeholder="Enter your mobile number"
-                required
-            >
-        </div>
+<div class="form-group">
+    <label for="phone">Mobile Number</label>
+
+    <div class="phone-group">
+        <select name="country_code" required>
+            <option value="+91">🇮🇳 +91</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+61">🇦🇺 +61</option>
+            <option value="+971">🇦🇪 +971</option>
+        </select>
+
+        <input 
+            type="tel" 
+            name="phone" 
+            placeholder="Enter mobile number"
+            required
+        >
+    </div>
+</div>
 
         <!-- Message -->
         <div class="form-group">
