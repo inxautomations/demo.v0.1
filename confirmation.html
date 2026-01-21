@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -200,22 +200,9 @@ gap:2rem
 .copyright{text-align:center;margin-top:2rem;border-top:1px solid #444;padding-top:1rem}
 
 /* FLOATING */
-.floating-buttons{
-position:fixed;
-bottom:20px;
-right:20px
-}
-.floating-btn{
-background:#667eea;
-color:#fff;
-padding:12px 25px;
-border-radius:25px;
-text-decoration:none;
-font-weight:bold
-}
 .whatsapp-float{
 position:fixed;
-bottom:90px;
+bottom:20px;
 right:20px
 }
 .whatsapp-icon{
@@ -303,12 +290,6 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-/* ===== FLOATING CTA ===== */
-.floating-btn:hover {
-    background: #764ba2;
-    transform: scale(1.05);
-}
-
 /* ===== WHATSAPP FLOAT ===== */
 .whatsapp-icon:hover {
     transform: scale(1.12);
@@ -321,25 +302,69 @@ nav ul li a:hover {
     font-weight: 700;
     letter-spacing: 0.5px;
 }
-.confirmation-box {
+.enquiry-form {
     max-width: 600px;
     margin: auto;
-    text-align: center;
-    padding: 3rem 2rem;
     background: #ffffff;
+    padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.confirmation-box p {
-    font-size: 1.05rem;
-    margin-bottom: 1rem;
+.form-group {
+    margin-bottom: 1.5rem;
 }
 
-.confirmation-note {
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #667eea;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+.checkbox-group {
     font-size: 0.9rem;
     color: #555;
-    margin-bottom: 2rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-group input {
+    margin-top: 3px;
 }
 
 
