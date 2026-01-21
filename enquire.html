@@ -511,8 +511,8 @@ nav ul li a:hover {
 </div>
         <!-- Submit -->
         <div style="text-align: center;" class="form-group">
-            <button type="submit" class="btn">
-                Submit Enquiry
+            <button type="submit" class="btn" id="submitBtn">
+            Submit
             </button>
         </div>
     </form>
@@ -570,6 +570,19 @@ nav ul li a:hover {
 function toggleMenu(){
 document.getElementById("navMenu").classList.toggle("active");
 }
+    
+document.querySelector(".enquiry-form").addEventListener("submit", function () {
+    const btn = document.getElementById("submitBtn");
+    btn.disabled = true;
+
+    let dots = 0;
+    btn.textContent = "Submitting";
+
+    setInterval(() => {
+        dots = (dots + 1) % 4;
+        btn.textContent = "Submitting" + ".".repeat(dots);
+    }, 500);
+});
 </script>
 
 </body>
